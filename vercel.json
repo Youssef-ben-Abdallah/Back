@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "name": "nodejs-mongodb",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "vercel-sapper",
+            "config": {
+                "build": true
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "*.js",
+            "dest": "/app.js"
+        }
+    ]
+}
